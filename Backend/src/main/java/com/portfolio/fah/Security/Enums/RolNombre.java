@@ -9,5 +9,5 @@ package com.portfolio.fah.Security.Enums;
  * @author Fabi
  */
 public enum RolNombre {
-    ROLE_ADMIN, ROLE_USER
+    ROLE_ADMIN, ROLE_USER;
 }

@@ -7,21 +7,18 @@ package com.portfolio.fah.Security.Dto;
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 
-/**
- *
- * @author Fabi
- */
+
 public class JwtDto {
     private String token;
     private String bearer = "Bearer";
     private String nombreUsuario;
     private Collection<? extends GrantedAuthority> authorities;
-
+    
     public JwtDto(String token, String nombreUsuario, Collection<? extends GrantedAuthority> authorities) {
         this.token = token;
         this.nombreUsuario = nombreUsuario;
         this.authorities = authorities;
-    }
+}
 
     public String getToken() {
         return token;
