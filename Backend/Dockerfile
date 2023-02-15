@@ -1,4 +1,4 @@
-from amazoncorretto:11-alpine-jdk
-maintainer FAH
-copy target/fah-0.0.1-SNAPSHOT.jar heilifabian-app.jar
-entrypoint ["java","-jar","/heilifabian-app.jar"]
+FROM  amazoncorretto:11-alpine-jdk
+MAINTAINER  FAH
+COPY  target/fah-0.0.1-SNAPSHOT.jar heilifabian-app.jar
+ENTRYPOINT  ["java","-jar","/heilifabian-app.jar"]
